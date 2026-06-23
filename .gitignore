@@ -1,0 +1,34 @@
+# Product Catalog API
+
+## Tech Stack
+- Node.js
+- Express.js
+- PostgreSQL (Neon)
+
+## Features
+- Cursor-based pagination
+- Category filtering
+- Indexed queries
+- 200,000 seeded products
+
+## Endpoints
+
+GET /products
+
+GET /products?limit=20
+
+GET /products?category=Electronics
+
+GET /products?limit=20&cursorTime=...&cursorId=...
+
+## Local Setup
+
+npm install
+
+Create .env:
+
+DATABASE_URL=your_neon_connection_string
+PORT=5000
+
+npm run seed
+npm run dev
